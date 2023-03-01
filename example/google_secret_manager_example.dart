@@ -7,7 +7,7 @@ Future<void> main() async {
   final json = File(path).readAsStringSync();
   await GoogleSecretManager.initViaServiceAccountJson(json);
 
-  final key = 'adjust_token';
+  final key = 'secret-name';
   final response = await GoogleSecretManager.instance.get(key);
   print('$key: ${response?.payload?.data}');
 }
