@@ -1,4 +1,4 @@
-A library for accessing the Secret Manager API.
+This package provides an API for accessing Google Secret Manager using Dart. The package allows users to initialize a `GoogleSecretManager` instance with service account JSON credentials, set and get the instance, and call a `get(secretName)` method to retrieve the secret data. The package uses the `googleapis` and `googleapis_auth` packages to authenticate the API requests and the `http` package to make HTTP requests. This package is useful for developers who want to securely store and retrieve secrets in their Dart applications using Google Secret Manager.
 
 ## Getting started
 
