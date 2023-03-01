@@ -12,7 +12,7 @@ dependencies:
 
 ## Usage
 
-To use the [GoogleSecretManager] class, you first need to initialize it via the [initViaServiceAccountJson] method and passing the downloaded JSON key file as a string:
+To use the `GoogleSecretManager` class, you first need to initialize it via the `GoogleSecretManager.initViaServiceAccountJson` method and passing the downloaded JSON key file as a string:
 ```dart
 final path = '${Directory.current.path}/service-account.json';
 final file = File(path);
@@ -20,12 +20,12 @@ final json = await file.readAsString();
 await GoogleSecretManager.initViaServiceAccountJson(json);
 ```
 
-Then, you can access the secret value by calling the GoogleSecretManager.get method:
+Then, you can access the secret value by calling the `GoogleSecretManager.get` method:
 ```dart
 final response = await GoogleSecretManager.instance.get('secret-name');
 ```
 
-For more information you can see a full example in the example folder.
+For more information you can see a full example in the `example` folder.
 
 ## Additional information
 

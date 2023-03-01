@@ -1,6 +1,6 @@
 name: google_secret_manager
 description: A library for accessing the Secret Manager API.
-version: 1.0.2
+version: 1.0.3
 repository: https://github.com/jopmiddelkamp/dart_google_secret_manager
 
 environment:
