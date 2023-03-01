@@ -1,3 +1,6 @@
+## 1.0.5
+- Updated the `pubspec.yaml` file.
+
 ## 1.0.4
 - Updated the `pubspec.yaml` file.
 - Updated the `README.md` file.
