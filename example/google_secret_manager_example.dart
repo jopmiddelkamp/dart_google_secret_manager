@@ -4,8 +4,7 @@ import 'package:google_secret_manager/google_secret_manager.dart';
 
 Future<void> main() async {
   final path = '${Directory.current.path}/gcm-service-account.json';
-  final file = File(path);
-  final json = await file.readAsString();
+  final json = File(path).readAsStringSync();
   await GoogleSecretManager.initViaServiceAccountJson(json);
 
   final key = 'adjust_token';
