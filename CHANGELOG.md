@@ -1,3 +1,6 @@
+## 1.0.6
+- Updated the example code.
+
 ## 1.0.5
 - Updated the `pubspec.yaml` file.
 
