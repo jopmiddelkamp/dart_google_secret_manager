@@ -50,8 +50,9 @@ abstract class GoogleSecretManager {
   /// Completes with a [commons.ApiRequestError] if the API endpoint returned an error.
   /// If the used [http.Client] completes with an error when making a REST call, this method will complete with the same error.
   Future<AccessSecretVersionResponse?> get(
-    String name,
-  );
+    String name, {
+    String? version,
+  });
 
   static GoogleSecretManager? _instance;
 
