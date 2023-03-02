@@ -9,5 +9,5 @@ Future<void> main() async {
 
   final key = 'secret-name';
   final response = await GoogleSecretManager.instance.get(key);
-  print('$key: ${response?.payload?.data}');
+  print('$key: ${response.payload?.data}');
 }

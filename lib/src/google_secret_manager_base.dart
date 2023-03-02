@@ -53,9 +53,10 @@ abstract class GoogleSecretManager {
   /// Completes with a [commons.ApiRequestError] if the API endpoint returned an error.
   ///
   /// If the used [http.Client] completes with an error when making a REST call, this method will complete with the same error.
-  Future<AccessSecretVersionResponse?> get(
+  Future<AccessSecretVersionResponse> get(
     String name, {
     String? version,
+    String? projectId,
   });
 
   static GoogleSecretManager? _instance;
@@ -93,12 +94,13 @@ class _GoogleSecretManagerImpl implements GoogleSecretManager {
   late String _projectId;
 
   @override
-  Future<AccessSecretVersionResponse?> get(
+  Future<AccessSecretVersionResponse> get(
     String name, {
     String? version,
+    String? projectId,
   }) async {
     final path =
-        'projects/$_projectId/secrets/$name/versions/${version ?? 'latest'}';
+        'projects/${projectId ?? _projectId}/secrets/$name/versions/${version ?? 'latest'}';
     final result = await _api.projects.secrets.versions.access(path);
     return result;
   }

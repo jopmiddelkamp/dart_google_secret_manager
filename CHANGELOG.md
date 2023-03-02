@@ -1,3 +1,7 @@
+## 1.0.8
+- Updated the response type of the `get()` method to be non-nullable.
+- Added optional `projectId` argument to the `get()` method.
+
 ## 1.0.7
 - Exported the google packages.
 - Updated the `example` code.
