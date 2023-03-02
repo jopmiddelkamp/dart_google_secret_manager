@@ -1,3 +1,6 @@
+## 1.0.10
+- Removed the additional `http` and `google` package exports.
+
 ## 1.0.9
 - Exported the `http` package.
 
