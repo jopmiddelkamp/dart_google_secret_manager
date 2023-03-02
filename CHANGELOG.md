@@ -1,3 +1,6 @@
+## 1.0.9
+- Exported the `http` package.
+
 ## 1.0.8
 - Updated the response type of the `get()` method to be non-nullable.
 - Added optional `projectId` argument to the `get()` method.
