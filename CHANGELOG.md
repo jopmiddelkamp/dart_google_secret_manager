@@ -1,3 +1,8 @@
+## 1.0.7
+- Exported the google packages.
+- Updated the `example` code.
+- Updated the `README.md` file.
+
 ## 1.0.6
 - Updated the example code.
 

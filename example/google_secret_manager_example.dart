@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:google_secret_manager/google_secret_manager.dart';
 
 Future<void> main() async {
-  final path = '${Directory.current.path}/gcm-service-account.json';
+  final path = '${Directory.current.path}/gsm-service-account.json';
   final json = File(path).readAsStringSync();
   await GoogleSecretManager.initViaServiceAccountJson(json);
 

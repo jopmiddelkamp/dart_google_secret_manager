@@ -1,6 +1,6 @@
 name: google_secret_manager
 description: This package provides an API for accessing Google Secret Manager using Dart. This package is useful for developers who want to securely store and retrieve secrets.
-version: 1.0.6
+version: 1.0.7
 repository: https://github.com/jopmiddelkamp/dart_google_secret_manager
 
 environment:

@@ -43,11 +43,15 @@ abstract class GoogleSecretManager {
   /// This call returns the secret data.
   ///
   /// Request parameters:
+  ///
   /// [name] - Required. The resource name of the SecretVersion.
+
   /// [version] - The resource version of the SecretVersion. If not provided, the latest version will be used.
   ///
   /// Completes with a [AccessSecretVersionResponse].
+  ///
   /// Completes with a [commons.ApiRequestError] if the API endpoint returned an error.
+  ///
   /// If the used [http.Client] completes with an error when making a REST call, this method will complete with the same error.
   Future<AccessSecretVersionResponse?> get(
     String name, {

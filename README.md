@@ -1,5 +1,9 @@
 This package provides an API for accessing Google Secret Manager using Dart. The package allows users to initialize a `GoogleSecretManager` instance with service account JSON credentials, set and get the instance, and call a `get(secretName)` method to retrieve the secret data. The package uses the `googleapis` and `googleapis_auth` packages to authenticate the API requests and the `http` package to make HTTP requests. This package is useful for developers who want to securely store and retrieve secrets in their Dart applications using Google Secret Manager.
 
+## Security
+
+At this moment the package only supports authentication via service account JSON credentials. This is not the most secure way to authenticate, but at this time it's the only way to authenticate with this package. In the future, I plan to add support for other authentication methods to make it more secure.
+
 ## Getting started
 
 First [create a service account](https://developers.google.com/workspace/guides/create-credentials#create_a_service_account) and download the JSON key file.
